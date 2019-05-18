@@ -1,0 +1,32 @@
+.hero {
+   width: 100%;
+   @extend .mb-1;
+   padding: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   box-shadow: shadow(8);
+   .hero-image {
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: shadow(16);
+   }
+   .hero-title {
+      @extend .mt-2;
+   }
+   .hero-description {
+      @extend .mt-1;
+   }
+   .hero-action {
+      @extend .mt-2;
+   }
+   .hero-content {
+      @extend .mt-2;
+   }
+   &.lama {
+      margin-top: 0;
+      background: $primary;
+   }
+}
