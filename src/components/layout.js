@@ -7,7 +7,7 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
     return (
-      <div className="all">
+      <div>
         <Navbar />
         <div className="container">
           <div>{children}</div>
