@@ -1,5 +1,14 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
+  // If production JavaScript and CSS build
+  if (stage === "build-javascript") {
+    // Turn off source maps
+    actions.setWebpackConfig({
+      devtool: false,
+    })
+  }
+}
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions

@@ -5311,6 +5311,11 @@ gatsby-plugin-manifest@^2.1.1:
     semver "^5.6.0"
     sharp "^0.22.1"
 
+gatsby-plugin-no-sourcemaps@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-2.0.2.tgz#2606bfec048ed391a1a275ccd0adaf0fff12f262"
+  integrity sha512-l7oulcpEwbP1WFR1sRO87Dlhc3h1Wju2SbZoc9MIB0P7OmoAfhgA+0UHCnrMcgGsV9XKJun3D+ldPcsDxf59/A==
+
 gatsby-plugin-nprogress@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.0.10.tgz#4d60e09515270c86b956497e4cc66cede5565db7"

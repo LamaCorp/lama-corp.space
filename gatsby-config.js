@@ -56,6 +56,9 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
+    {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
