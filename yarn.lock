@@ -757,6 +757,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@gatsby-contrib/gatsby-plugin-elasticlunr-search@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@gatsby-contrib/gatsby-plugin-elasticlunr-search/-/gatsby-plugin-elasticlunr-search-2.2.1.tgz#3067ed316c28ea933810b46ff0cccb43ed4ac9c6"
+  integrity sha512-fWIjc54pV3DRzpMmmb0t89VxP8eZ1YRrgzkd2d2arM6qYDew7aoHv6muSOGJeJtoWmOJZ72u9cUfB4Ssoz+dsQ==
+  dependencies:
+    elasticlunr "^0.9.5"
+
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.2":
   version "2.0.0-printer-fix.2"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/relay-compiler/-/relay-compiler-2.0.0-printer-fix.2.tgz#214db0e6072d40ea78ad5fabdb49d56bc95f4e99"
@@ -4066,6 +4073,11 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
+elasticlunr@^0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/elasticlunr/-/elasticlunr-0.9.5.tgz#65541bb309dddd0cf94f2d1c8861b2be651bb0d5"
+  integrity sha1-ZVQbswnd3Qz5Ty0ciGGyvmUbsNU=
+
 electron-to-chromium@^1.3.133, electron-to-chromium@^1.3.47:
   version "1.3.135"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.135.tgz#f5799b95f2bcd8de17cde47d63392d83a4477041"
@@ -4755,9 +4767,9 @@ fastparse@^1.1.1:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
-"favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
+"favicons-webpack-plugin@https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
-  resolved "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  resolved "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
@@ -5289,16 +5301,6 @@ gatsby-plugin-favicon@^3.1.6:
     favicons-webpack-plugin "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
     html-react-parser "^0.6.4"
     lodash "^4.17.11"
-
-gatsby-plugin-feed@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.2.0.tgz#fde7c0de54364e21b58ed88c5b394cf58d530d89"
-  integrity sha512-/xbR/bfDWYyeCkgGqCXSURa1xvK3P8DlzHNu63fEXCsTR/fqi272SdRtlgpxIVqHJg11DmKyI+ZIWt1olAtoXA==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    fs-extra "^7.0.1"
-    lodash.merge "^4.6.0"
-    rss "^1.2.2"
 
 gatsby-plugin-manifest@^2.1.1:
   version "2.1.1"
@@ -7845,11 +7847,6 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
-lodash.merge@^4.6.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
-  integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
-
 lodash.mergewith@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
@@ -8223,18 +8220,6 @@ mime-db@^1.28.0, mime-db@~1.38.0:
   version "1.38.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.38.0.tgz#1a2aab16da9eb167b49c6e4df2d9c68d63d8e2ad"
   integrity sha512-bqVioMFFzc2awcdJZIzR3HjZFX20QhilVS7hytkKrv7xFAn8bM1gzc/FOX2awLISvWe0PV8ptFKcon+wZ5qYkg==
-
-mime-db@~1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.25.0.tgz#c18dbd7c73a5dbf6f44a024dc0d165a1e7b1c392"
-  integrity sha1-wY29fHOl2/b0SgJNwNFloeexw5I=
-
-mime-types@2.1.13:
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
-  integrity sha1-4HqqnGxrmnyjASxpADrSWjnpKog=
-  dependencies:
-    mime-db "~1.25.0"
 
 mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.19:
   version "2.1.22"
@@ -10924,14 +10909,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rss@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/rss/-/rss-1.2.2.tgz#50a1698876138133a74f9a05d2bdc8db8d27a921"
-  integrity sha1-UKFpiHYTgTOnT5oF0r3I240nqSE=
-  dependencies:
-    mime-types "2.1.13"
-    xml "1.0.1"
-
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -12365,11 +12342,6 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-merriweather@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
 typeface-montserrat@0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.54.tgz#3fc338db6428d73485b75aa7bd2af8c9a55b9ab3"
@@ -13271,11 +13243,6 @@ xml2js@^0.4.5:
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~9.0.1"
-
-xml@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
-  integrity sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=
 
 xmlbuilder@^4.1.0:
   version "4.2.1"

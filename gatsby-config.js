@@ -55,21 +55,24 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/lama.png`,
+        // Fields to index
+        fields: [`title`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            tags: node => node.frontmatter.tags,
+            slug: node => node.fields.slug,
+          },
+        },
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {

@@ -1,19 +1,15 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "lama-corp-website",
+  "description": "Lama Corp Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Félix Dorn <felixdorn@protonmail.com>",
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "gatsby": "^2.5.5",
     "gatsby-image": "^2.1.0",
     "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-feed": "^2.2.0",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-nprogress": "^2.0.10",
     "gatsby-plugin-offline": "^2.1.1",
@@ -38,7 +34,6 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
@@ -46,21 +41,12 @@
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }

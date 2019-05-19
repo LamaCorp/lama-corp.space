@@ -4,9 +4,7 @@ export default class marc extends Component {
   render() {
     return (
       <Layout>
-        <div classNa>
-
-        </div>
+        <div classNa />
       </Layout>
     )
   }

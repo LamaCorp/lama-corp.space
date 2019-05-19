@@ -2,9 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TeamList from "../components/teamlist"
-import CtaWhoWeAre from "../components/cta/WhoWeWare"
 import Link from "gatsby-link"
+import Header from "../components/SearchBar"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -14,9 +13,8 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
-        <CtaWhoWeAre />
-        <TeamList />
-        <h1 className="articles-title">Last articles</h1>
+        <Header />
+        <h1 className="articles-title">Articles</h1>
         <div className="articles-container">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.slug
@@ -27,7 +25,6 @@ class BlogIndex extends React.Component {
                 </h3>
                 <small className="article-date">{node.frontmatter.date}</small>
                 <p
-                  className="article-description"
                   dangerouslySetInnerHTML={{
                     __html: node.excerpt,
                   }}
@@ -50,10 +47,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      limit: 2
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt

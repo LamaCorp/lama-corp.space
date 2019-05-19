@@ -1,0 +1,18 @@
+.searchField {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 2em;
+}
+.search-text {
+  margin: 0 !important;
+  font-size: 2em;
+}
+.search-results {
+  margin-top: 1em;
+  .search-result {
+    text-decoration: underline;
+  }
+}

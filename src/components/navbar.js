@@ -7,7 +7,6 @@ import CssBaseline from "@material-ui/core/CssBaseline"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import List from "@material-ui/core/List"
-import Typography from "@material-ui/core/Typography"
 import Divider from "@material-ui/core/Divider"
 import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
@@ -16,14 +15,13 @@ import ListItemIcon from "@material-ui/core/ListItemIcon"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import Link from "gatsby-link"
-import TeamIcon from "@material-ui/icons/people"
+import CodeIcon from "@material-ui/icons/code"
 import MailIcon from "@material-ui/icons/email"
 import BlogIcon from "@material-ui/icons/libraryBooks"
 import AboutIcon from "@material-ui/icons/help"
 import HomeIcon from "@material-ui/icons/home"
 const drawerWidth = 240
 const primary = "#ffa500"
-
 const styles = theme => ({
   appBar: {
     backgroundColor: primary,
@@ -86,7 +84,7 @@ class PersistentDrawerLeft extends React.Component {
   }
 
   render() {
-    const { classes, theme } = this.props
+    const { classes } = this.props
     const { openNavbar } = this.state
 
     return (
@@ -139,12 +137,12 @@ class PersistentDrawerLeft extends React.Component {
                 <ListItemText primary="Home" />
               </ListItem>
             </Link>
-            <Link to="/team">
+            <Link to="/projects">
               <ListItem button>
                 <ListItemIcon>
-                  <TeamIcon />
+                  <CodeIcon />
                 </ListItemIcon>
-                <ListItemText primary="Team" />
+                <ListItemText primary="Projects" />
               </ListItem>
             </Link>
             <Link to="/about">
