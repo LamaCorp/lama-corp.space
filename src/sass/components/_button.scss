@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  // max-height: 22px;
+  transition: all 0.2s ease;
+  box-shadow: shadow(0);
+  &:active {
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.2),
+      0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+    border-bottom: none;
+  }
+
+  &:hover {
+    position: relative;
+    top: 1px;
+  }
+  &.lama {
+    border-bottom: 4px solid darken($primary, 5);
+    background: $primary;
+    color: $on-primary;
+  }
+}

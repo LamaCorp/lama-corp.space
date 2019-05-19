@@ -1,0 +1,42 @@
+.card-container {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  .card {
+    @extend .mb-2;
+  }
+}
+@include for-size(tablet-landscape-up) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.card {
+  display: block;
+  border-top: 4px solid $primary;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: shadow(4);
+  text-align: left;
+  .card-header {
+    img {
+      display: none;
+    }
+    & * {
+      margin-top: 0;
+    }
+    margin-top: 0px;
+  }
+  .card-content {
+    text-align: justify;
+  }
+  .card-actions {
+    @extend .mt-1;
+  }
+}
+@include for-size(tablet-portrait-up) {
+  .card-header {
+    display: flex;
+    align-items: center;
+  }
+}

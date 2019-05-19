@@ -1,0 +1,13 @@
+.cta {
+   @extend .mt-4;
+   @extend .mb-4;
+   .cta-actions {
+      @extend .mt-1;
+   }
+}
+
+@include for-size(tablet-landscape-up) {
+   .cta-title {
+      margin-bottom: 0.5em;
+   }
+}
