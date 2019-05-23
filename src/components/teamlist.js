@@ -6,12 +6,6 @@ export default class teamlist extends Component {
       <div className="card-container">
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>
@@ -23,12 +17,6 @@ export default class teamlist extends Component {
         </div>
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>
@@ -40,12 +28,6 @@ export default class teamlist extends Component {
         </div>
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>
@@ -57,12 +39,6 @@ export default class teamlist extends Component {
         </div>
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>
@@ -74,12 +50,6 @@ export default class teamlist extends Component {
         </div>
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>
@@ -91,12 +61,6 @@ export default class teamlist extends Component {
         </div>
         <div className="card">
           <div className="card-header">
-            <img
-              src="http://unsplash.it/1080"
-              alt="."
-              title="."
-              class="card-image"
-            />
             <h1 className="card-title">Diego Dorn</h1>
           </div>
           <p className="card-content">some content here :)</p>

@@ -6,6 +6,13 @@
   font-family: $font-family;
   hyphens: auto;
 }
+button::-moz-focus-inner {
+  border: none;
+}
+*:focus {
+  border: none;
+  outline: none;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -20,6 +27,14 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.all {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: $footer-height + (16px * 2); /* height of your footer + margin  16px= 1em*/
 }
 
 html {
@@ -177,10 +192,12 @@ footer {
   text-align: center;
   background: $primary;
   @extend .mt-4;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 10px;
 }
+
 html {
-  scrollbar-color: $primary white;
   scrollbar-width: thin;
 }

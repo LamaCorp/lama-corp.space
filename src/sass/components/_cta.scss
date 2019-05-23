@@ -1,13 +1,19 @@
 .cta {
-   @extend .mt-4;
-   @extend .mb-4;
-   .cta-actions {
-      @extend .mt-1;
-   }
+  @extend .mt-4;
+  @extend .mb-4;
+  .cta-actions {
+    @extend .mt-1;
+  }
+  .cta-multiple-button {
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 @include for-size(tablet-landscape-up) {
-   .cta-title {
-      margin-bottom: 0.5em;
-   }
+  .cta-title {
+    margin-bottom: 0.5em;
+  }
 }
