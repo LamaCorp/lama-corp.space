@@ -96,25 +96,17 @@ module.exports = {
           favicons: true,
           firefox: true,
           yandex: false,
-          windows: false,
+          windows: true,
         },
       },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
+        printRejected: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `#ffa500`,
-        // Disable the loading spinner.
-        showSpinner: true,
-      },
-    },
+    
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
