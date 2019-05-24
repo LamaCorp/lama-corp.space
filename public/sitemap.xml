@@ -7,5 +7,6 @@
 <url> <loc>https://www.lama-corp.space/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.lama-corp.space/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.lama-corp.space/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.lama-corp.space/projects/amazingproject/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.lama-corp.space/team/marc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

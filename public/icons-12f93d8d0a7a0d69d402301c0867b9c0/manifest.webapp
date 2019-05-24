@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "name": "lama-corp-website",
+  "name": "Lama Corp",
   "description": null,
   "icons": {
     "60": "/icons-12f93d8d0a7a0d69d402301c0867b9c0/firefox_app_60x60.png",
@@ -8,7 +8,7 @@
     "512": "/icons-12f93d8d0a7a0d69d402301c0867b9c0/firefox_app_512x512.png"
   },
   "developer": {
-    "name": null,
+    "name": "Félix Dorn",
     "url": null
   }
 }

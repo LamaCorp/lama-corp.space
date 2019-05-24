@@ -12,14 +12,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/,
-        },
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -79,6 +71,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
+        appName: "Lama Corp",
+        developerName: "Félix Dorn",
         logo: "./static/favicon.png",
         dir: "auto",
         lang: "en-US",
@@ -96,7 +90,7 @@ module.exports = {
           favicons: true,
           firefox: true,
           yandex: false,
-          windows: false,
+          windows: true,
         },
       },
     },
@@ -104,15 +98,6 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `#ffa500`,
-        // Disable the loading spinner.
-        showSpinner: true,
       },
     },
     `gatsby-plugin-offline`,
