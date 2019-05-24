@@ -5,6 +5,10 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 2em;
+  transition: all 0.1s ease;
+  &:focus {
+    border: 3px solid $primary;
+  }
 }
 .search-text {
   margin: 0 !important;
@@ -15,4 +19,7 @@
   .search-result {
     text-decoration: underline;
   }
+}
+.field {
+  @extend .searchField;
 }

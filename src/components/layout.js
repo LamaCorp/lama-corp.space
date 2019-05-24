@@ -14,7 +14,7 @@ class Layout extends React.Component {
         </div>
         <footer>
           © {new Date().getFullYear()} All rights reserved, Lama Corp |
-          lama-corp.space{" "}
+          lama-corp.space
         </footer>
       </div>
     )

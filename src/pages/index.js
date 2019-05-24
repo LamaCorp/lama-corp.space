@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TeamList from "../components/teamlist"
-import CtaWhoWeAre from "../components/cta/WhoWeWare"
 import Link from "gatsby-link"
+import Cta from "../components/cta/cta"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -14,7 +14,12 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
-        <CtaWhoWeAre />
+        <Cta
+          title="Who we are"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci laudantium quos error quaerat labore quam numquam, molestias placeat. Laborum."
+          buttonText="About us"
+          buttonLink="/about"
+        />
         <TeamList />
         <h1 className="articles-title">Last articles</h1>
         <div className="articles-container">
