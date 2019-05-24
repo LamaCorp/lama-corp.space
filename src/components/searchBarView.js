@@ -16,6 +16,7 @@ export default class Search extends Component {
       <div>
         <input
           type="text"
+          autoFocus
           className="searchField"
           placeholder="Enter your search query here."
           value={this.state.query}
@@ -23,7 +24,7 @@ export default class Search extends Component {
         />
         <div className="search-results">
           {this.state.results.map(page => (
-            <div className="search-result">
+            <div className="search-result" key={page.fields.slug}>
               <span>
                 <Link to={"/" + page.slug}>{page.title}</Link>
               </span>
@@ -35,6 +36,7 @@ export default class Search extends Component {
               />
             </div>
           ))}
+          {this.state.results === [] ? <span>Prout</span> : ""}
         </div>
       </div>
     )

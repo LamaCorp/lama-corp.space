@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Link from "gatsby-link"
-import Header from "../components/SearchBar"
+import SearchBar from "../components/SearchBar"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
-        <Header />
+        <SearchBar />
         <h1 className="articles-title">Articles</h1>
         <div className="articles-container">
           {posts.map(({ node }) => {
