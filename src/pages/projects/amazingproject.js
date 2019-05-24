@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Layout from "../../components/layout"
-import HomeIcon from "@material-ui/icons/home"
 export default class amazingproject extends Component {
   render() {
     return (
@@ -23,12 +22,7 @@ export default class amazingproject extends Component {
         <div className="card-container">
           <div className="card">
             <div className="card-header">
-              <h1 className="card-title">
-                <span className="card-icon">
-                  <HomeIcon />
-                </span>
-                A really
-              </h1>
+              <h1 className="card-title">A really</h1>
             </div>
             <p className="card-content">
               Contrairement à une opinion répandue, le Lorem Ipsum n'est pas

@@ -21,7 +21,7 @@ import BlogIcon from "@material-ui/icons/libraryBooks"
 import AboutIcon from "@material-ui/icons/help"
 import HomeIcon from "@material-ui/icons/home"
 const drawerWidth = 240
-const primary = "#ffa500"
+export const primary = "#ffa500"
 const styles = theme => ({
   appBar: {
     backgroundColor: primary,
@@ -171,7 +171,9 @@ class PersistentDrawerLeft extends React.Component {
             </Link>
           </List>
         </Drawer>
-        <div className={classes.drawerHeader} />
+        {this.props.noContainer === undefined ? (
+          <div className={classes.drawerHeader} />
+        ) : null}
       </div>
     )
   }

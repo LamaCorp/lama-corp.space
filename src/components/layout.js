@@ -8,10 +8,20 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <div className="all">
-        <Navbar />
-        <div className="container">
-          <div>{children}</div>
-        </div>
+        {this.props.noContainer !== undefined ? (
+          <div>
+            <Navbar noContainer />
+            <div>{children}</div>
+          </div>
+        ) : (
+          <div>
+            <Navbar />
+            <div className="container">
+              <div>{children}</div>
+            </div>
+          </div>
+        )}
+
         <footer>
           © {new Date().getFullYear()} All rights reserved, Lama Corp |
           lama-corp.space
