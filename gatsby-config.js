@@ -75,6 +75,7 @@ module.exports = {
         developerName: "Félix Dorn",
         logo: "./static/favicon.png",
         dir: "auto",
+
         lang: "en-US",
         background: "#fff",
         theme_color: "#fff",
@@ -89,8 +90,9 @@ module.exports = {
           coast: false,
           favicons: true,
           firefox: true,
+          twitter: false,
           yandex: false,
-          windows: true,
+          windows: false,
         },
       },
     },
