@@ -167,6 +167,7 @@ class Layout extends React.Component {
           </div>
         </SwipeableDrawer>
         <div className={classes.content}>{children}</div>
+        <footer>&copy; {new Date().getFullYear()} All rights reserved, Lama Corp | lama-corp.space</footer>
       </div>
     )
   }

@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
 import { mail } from "../data/info.json"
+import Seo from "../components/Seo"
+
 export default class contact extends Component {
   constructor(props) {
     super(props)
@@ -25,6 +27,7 @@ export default class contact extends Component {
 
     return (
       <Layout>
+        <Seo title="Contact" />
         <h1>Contact us</h1>
         <form>
           <input

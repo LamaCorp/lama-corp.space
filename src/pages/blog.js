@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/Seo"
 import Link from "gatsby-link"
 import SearchBar from "../components/SearchBar"
 class BlogIndex extends React.Component {
@@ -12,25 +12,29 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
+        <SEO title="Blog" />
         <SearchBar />
-        <h1 className="articles-title">Articles</h1>
-        <div className="articles-container">
+        <h1>Articles</h1>
+        <div className="card-container">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.slug
             return (
-              <div className="article" key={node.fields.slug}>
-                <h3 className="article-title">
-                  <Link to={node.fields.slug}>{title}</Link>
-                </h3>
+              <Link to={node.fields.slug}>
+              <div className="card" key={node.fields.slug}>
                 <small className="article-date">{node.frontmatter.date}</small>
+                <div className="card-header">
+                  <h3 className="card-title">
+                    {title}
+                  </h3>
+                </div>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.excerpt,
                   }}
                 />
               </div>
-            )
+</Link>
+)
           })}
         </div>
       </Layout>

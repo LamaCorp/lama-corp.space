@@ -1,11 +1,12 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
-
+import Seo from "../components/Seo"
 export default class about extends Component {
   render() {
     return (
       <Layout>
+        <Seo title="About" />
         <h1>About us</h1>
         <p>
           Sunt ea laborum duis nisi adipisicing magna eu. Ad adipisicing aliquip
