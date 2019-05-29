@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Layout from "../../components/layout"
-import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
-import { primary } from "../../components/navbar"
+import { primary } from "../../components/layout"
 export default class marc extends Component {
   render() {
     return (
@@ -30,54 +29,6 @@ export default class marc extends Component {
               récemment, par son inclusion dans des applications de mise en page
               de texte, comme Aldus PageMaker.
             </p>
-
-            <Timeline lineColor={"#ddd"}>
-              <TimelineItem
-                key="001"
-                dateText="15 april 2005"
-                dateInnerStyle={{ background: primary }}
-                style={{ color: primary }}
-              >
-                <h3>Title</h3>
-                <p>
-                  Est incididunt sint eu minim dolore mollit velit velit commodo
-                  ex nulla exercitation. Veniam velit adipisicing anim excepteur
-                  nostrud magna nostrud aliqua dolor. Sunt aute est duis ut
-                  nulla officia irure reprehenderit laborum fugiat dolore in
-                  elit. Adipisicing do qui duis Lorem est.
-                </p>
-              </TimelineItem>
-              <TimelineItem
-                key="002"
-                dateText="15 april 2005"
-                dateInnerStyle={{ background: primary }}
-                style={{ color: primary }}
-              >
-                <h3>Title</h3>
-                <p>
-                  Est incididunt sint eu minim dolore mollit velit velit commodo
-                  ex nulla exercitation. Veniam velit adipisicing anim excepteur
-                  nostrud magna nostrud aliqua dolor. Sunt aute est duis ut
-                  nulla officia irure reprehenderit laborum fugiat dolore in
-                  elit. Adipisicing do qui duis Lorem est.
-                </p>
-              </TimelineItem>
-              <TimelineItem
-                key="003"
-                dateText="15 april 2005"
-                dateInnerStyle={{ background: primary }}
-                style={{ color: primary }}
-              >
-                <h3>Title</h3>
-                <p>
-                  Est incididunt sint eu minim dolore mollit velit velit commodo
-                  ex nulla exercitation. Veniam velit adipisicing anim excepteur
-                  nostrud magna nostrud aliqua dolor. Sunt aute est duis ut
-                  nulla officia irure reprehenderit laborum fugiat dolore in
-                  elit. Adipisicing do qui duis Lorem est.
-                </p>
-              </TimelineItem>
-            </Timeline>
           </div>
         </div>
       </Layout>

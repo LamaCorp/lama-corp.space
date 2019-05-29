@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TeamList from "../components/teamlist"
 import Link from "gatsby-link"
-import Cta from "../components/cta/cta"
+import Cta from "../components/cta"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
