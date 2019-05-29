@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import Link from "gatsby-link"
+import Link from "../components/Link"
 import SearchBar from "../components/SearchBar"
 class BlogIndex extends React.Component {
   render() {
@@ -20,21 +20,21 @@ class BlogIndex extends React.Component {
             const title = node.frontmatter.title || node.frontmatter.slug
             return (
               <Link to={node.fields.slug}>
-              <div className="card" key={node.fields.slug}>
-                <small className="article-date">{node.frontmatter.date}</small>
-                <div className="card-header">
-                  <h3 className="card-title">
-                    {title}
-                  </h3>
+                <div className="card" key={node.fields.slug}>
+                  <small className="article-date">
+                    {node.frontmatter.date}
+                  </small>
+                  <dsiv className="card-header">
+                    <h3 className="card-title">{title}</h3>
+                  </dsiv>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.excerpt,
+                    }}
+                  />
                 </div>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.excerpt,
-                  }}
-                />
-              </div>
-</Link>
-)
+              </Link>
+            )
           })}
         </div>
       </Layout>

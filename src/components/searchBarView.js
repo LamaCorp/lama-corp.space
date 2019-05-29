@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Index } from "elasticlunr"
-import { Link } from "gatsby"
+import Link from "./Link"
 // Search component
 export default class Search extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import Layout from "../components/layout"
-import { Link } from "gatsby"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
 import Seo from "../components/Seo"
 export default class about extends Component {
   render() {

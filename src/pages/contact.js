@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import Layout from "../components/layout"
-import { mail } from "../data/info.json"
+import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
 export default class contact extends Component {
@@ -21,6 +20,7 @@ export default class contact extends Component {
   }
 
   render() {
+    const mail = "felixdorn@protonmail.com"
     const mailtoLink = `mailto:${mail}?subject=${this.state.subject}&body=${
       this.state.body
     }`

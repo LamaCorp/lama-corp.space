@@ -2,13 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Lama Corp`,
     author: `Lama Corp`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Lama Corp Website.`,
     siteUrl: `https://www.lama-corp.space`,
-    social: {
-      twitter: ``,
-    },
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     {

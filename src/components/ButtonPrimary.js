@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import Link from "./Link"
 export default class button extends Component {
   render() {
     const { link, text } = this.props

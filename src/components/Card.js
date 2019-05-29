@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import ButtonPrimary from "./ButtonPrimary"
 import ButtonSecondary from "./ButtonSecondary"
-import { Link } from "gatsby"
+import Link from "./Link"
 export default class Card extends Component {
   render() {
     const { title, content, primaryButton, secondaryButton } = this.props

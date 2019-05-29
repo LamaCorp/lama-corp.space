@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import TeamList from "../components/teamlist"
-import Link from "gatsby-link"
+import Link from "../components/Link"
 import Cta from "../components/Cta"
 import ProjectList from "../components/ProjectList"
-import ButtonPrimary from "../components/ButtonPrimary"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -24,6 +23,7 @@ class BlogIndex extends React.Component {
         />
         <h2 className="h1">Team</h2>
         <TeamList />
+
         <h1 className="articles-title">
           <Link to="/blog">Last articles </Link>
         </h1>
@@ -33,9 +33,7 @@ class BlogIndex extends React.Component {
             return (
               <Link to={node.fields.slug}>
                 <div className="card" key={node.fields.slug}>
-                    <small>
-                      {node.frontmatter.date}
-                    </small>
+                  <small>{node.frontmatter.date}</small>
                   <div className="card-header">
                     <h3 className="card-title">{title}</h3>
                   </div>
@@ -52,7 +50,12 @@ class BlogIndex extends React.Component {
         </div>
         <h1>Our projects</h1>
         <ProjectList />
-        <Cta title="Contact us" description="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C." buttonText="Contact us" buttonLink="/contact" />
+        <Cta
+          title="Contact us"
+          description="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C."
+          buttonText="Contact us"
+          buttonLink="/contact"
+        />
       </Layout>
     )
   }

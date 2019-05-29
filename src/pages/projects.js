@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import ProjectList from "../components/ProjectList"
 import Seo from "../components/Seo"
 export default class team extends Component {

@@ -11,7 +11,7 @@ import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
-import { Link } from "gatsby"
+import Link from "./Link"
 import CodeIcon from "@material-ui/icons/Code"
 import BlogIcon from "@material-ui/icons/LibraryBooks"
 import AboutIcon from "@material-ui/icons/Help"
@@ -147,6 +147,7 @@ class Layout extends React.Component {
                   <ListItemText primary="About" />
                 </ListItem>
               </Link>
+
               <Link to="/blog">
                 <ListItem button>
                   <ListItemIcon>
@@ -167,7 +168,10 @@ class Layout extends React.Component {
           </div>
         </SwipeableDrawer>
         <div className={classes.content}>{children}</div>
-        <footer>&copy; {new Date().getFullYear()} All rights reserved, Lama Corp | lama-corp.space</footer>
+        <footer>
+          &copy; {new Date().getFullYear()} All rights reserved, Lama Corp |
+          lama-corp.space
+        </footer>
       </div>
     )
   }
