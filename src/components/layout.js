@@ -17,7 +17,7 @@ import BlogIcon from "@material-ui/icons/LibraryBooks"
 import AboutIcon from "@material-ui/icons/Help"
 import HomeIcon from "@material-ui/icons/Home"
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft"
-import "../sass/styles.scss"
+import "./../sass/styles.scss"
 export const primary = "#ffa500"
 const drawerWidth = 250
 const styles = theme => ({

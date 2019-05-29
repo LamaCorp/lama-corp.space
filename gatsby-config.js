@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://www.lama-corp.space`,
   },
   plugins: [
+    `gatsby-plugin-nprogress`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
@@ -97,7 +98,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
+        printRejected: true,
       },
     },
     `gatsby-plugin-offline`,

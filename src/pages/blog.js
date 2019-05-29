@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import Link from "../components/Link"
-import SearchBar from "../components/SearchBar"
+import Layout from "./../components/Layout"
+import SEO from "./../components/Seo"
+import Link from "./../components/Link"
+import SearchBar from "./../components/SearchBar"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props

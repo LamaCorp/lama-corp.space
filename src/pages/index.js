@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import TeamList from "../components/teamlist"
-import Link from "../components/Link"
-import Cta from "../components/Cta"
-import ProjectList from "../components/ProjectList"
+import Layout from "./../components/Layout"
+import SEO from "./../components/Seo"
+import TeamList from "./../components/teamlist"
+import Link from "./../components/Link"
+import Cta from "./../components/Cta"
+import ProjectList from "./../components/ProjectList"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
