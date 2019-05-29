@@ -32,6 +32,12 @@
   }
   .card-actions {
     @extend .mt-1;
+    .lama-outlined {
+      @extend .mt-1;
+    }
+    & .button {
+      width: 100%;
+    }
   }
 }
 @include for-size(tablet-portrait-up) {

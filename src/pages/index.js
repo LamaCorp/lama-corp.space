@@ -4,7 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TeamList from "../components/teamlist"
 import Link from "gatsby-link"
-import Cta from "../components/cta"
+import Cta from "../components/Cta"
+import ProjectList from "../components/ProjectList"
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -20,8 +21,11 @@ class BlogIndex extends React.Component {
           buttonText="About us"
           buttonLink="/about"
         />
+        <h2 className="h1">Team</h2>
         <TeamList />
-        <h1 className="articles-title">Last articles</h1>
+        <h1 className="articles-title">
+          <Link to="/blog">Last articles </Link>
+        </h1>
         <div className="articles-container">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.slug
@@ -43,6 +47,9 @@ class BlogIndex extends React.Component {
             )
           })}
         </div>
+        <h1>Our projects</h1>
+        <ProjectList />
+        <Cta title="Contact us" description="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C." buttonText="Contact us" buttonLink="/contact"/>
       </Layout>
     )
   }

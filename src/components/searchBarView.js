@@ -16,7 +16,6 @@ export default class Search extends Component {
       <div>
         <input
           type="text"
-          autoFocus
           className="searchField"
           placeholder="Enter your search query here."
           value={this.state.query}

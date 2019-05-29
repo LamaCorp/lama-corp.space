@@ -1,24 +1,24 @@
 @function shadow($value) {
-   @if $value == 0 {
-      @return 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
-         0px 0px 2px rgba(0, 0, 0, 0.14);
-   } @else if $value == 2 {
-      @return 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
-         0px 2px 4px rgba(0, 0, 0, 0.14);
-   } @else if $value == 4 {
-      @return 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12),
-         0px 2px 4px rgba(0, 0, 0, 0.14);
-   } @else if $value == 6 {
-      @return 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12),
-         0px 6px 10px rgba(0, 0, 0, 0.14);
-   } @else if $value == 8 {
-      @return 0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12),
-         0px 8px 10px rgba(0, 0, 0, 0.14);
-   } @else if $value == 12 {
-      @return 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12),
-         0px 12px 17px rgba(0, 0, 0, 0.14);
-   } @else if $value == 16 {
-      @return 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.12),
-         0px 16px 24px rgba(0, 0, 0, 0.14);
-   }
+  @if $value == 0 {
+    @return 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
+      0px 0px 2px rgba(0, 0, 0, 0.14);
+  } @else if $value == 2 {
+    @return 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+      0px 2px 4px rgba(0, 0, 0, 0.14);
+  } @else if $value == 4 {
+    @return 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12),
+      0px 2px 4px rgba(0, 0, 0, 0.14);
+  } @else if $value == 6 {
+    @return 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12),
+      0px 6px 10px rgba(0, 0, 0, 0.14);
+  } @else if $value == 8 {
+    @return 0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12),
+      0px 8px 10px rgba(0, 0, 0, 0.14);
+  } @else if $value == 12 {
+    @return 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12),
+      0px 12px 17px rgba(0, 0, 0, 0.14);
+  } @else if $value == 16 {
+    @return 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.12),
+      0px 16px 24px rgba(0, 0, 0, 0.14);
+  }
 }

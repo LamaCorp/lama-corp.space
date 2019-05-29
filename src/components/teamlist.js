@@ -1,87 +1,40 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
+import Card from "./Card"
 export default class teamlist extends Component {
   render() {
     return (
       <div className="card-container">
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <h1 className="card-title">Diego Dorn</h1>
-          </div>
-          <p className="card-content">some content here :)</p>
-          <div className="card-actions">
-            <Link to="/team/diego">
-              <button className="button lama full-width">
-                More about Diego
-              </button>
-            </Link>
-          </div>
-        </div>
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
+        <Card
+          title="Diego Dorn"
+          content="some content here :)"
+          primaryButton={["/team/diego", "More about Diego"]}
+        />
       </div>
     )
   }

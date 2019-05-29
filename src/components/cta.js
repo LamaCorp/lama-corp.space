@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
+import ButtonPrimary from "./ButtonPrimary"
 // import Link from "gatsby-link"
 export default class cta extends Component {
   render() {
@@ -10,20 +11,15 @@ export default class cta extends Component {
         this.props.buttons !== undefined
       ) {
         this.props.buttons.forEach(button => {
-          buttons.push(
-            <Link to={button[1]}>
-              <button className="button lama cta-multiple-button">
-                {button[0]}
-              </button>
-            </Link>
-          )
+          buttons.push(<ButtonPrimary link={button[1]} text={button[0]} />)
         })
         return buttons
       } else if (this.props.buttonText !== undefined) {
         return (
-          <button className="button lama">
-            <Link to={this.props.buttonLink}>{this.props.buttonText}</Link>
-          </button>
+          <ButtonPrimary
+            link={this.props.buttonLink}
+            text={this.props.buttonText}
+          />
         )
       } else {
         return (

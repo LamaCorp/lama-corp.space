@@ -112,7 +112,7 @@ class Layout extends React.Component {
           onOpen={this.toggleDrawer("left", true)}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={this.handleDrawerClose}>
+            <IconButton onClick={this.toggleDrawer("left", false)}>
               <ChevronLeftIcon />
             </IconButton>
           </div>
