@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Layout from "./.././../components/Layout"
-import { primary } from "./.././../components/Layout"
 export default class marc extends Component {
   render() {
     return (

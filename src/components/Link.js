@@ -5,7 +5,7 @@ export default class Link extends Component {
   render() {
     const { to, children } = this.props
     return (
-      <AniLink paintDrip hex={primary} to={to}>
+      <AniLink fade to={to}>
         {children}
       </AniLink>
     )
