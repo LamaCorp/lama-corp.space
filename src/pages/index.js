@@ -31,11 +31,11 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.slug
             return (
-              <Link to={node.fields.slug}>
+              <Link to={"blog" + node.fields.slug}>
                 <div className="card" key={node.fields.slug}>
                   <small>{node.frontmatter.date}</small>
                   <div className="card-header">
-                    <h3 className="card-title">{title}</h3>
+                    <h3 className="h1 card-title">{title}</h3>
                   </div>
                   <p
                     className="card-content"
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 2
+      limit: 4
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

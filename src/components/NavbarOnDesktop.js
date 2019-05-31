@@ -50,26 +50,34 @@ function ButtonAppBar(props) {
       <AppBar className={classes.appBar} position="fixed">
         <Toolbar style={{ backgroundColor: primary}}>
           <span to="/" className={classes.menuButton} className={classes.grow}>
-            <Link to="/">Lama Corp</Link>
+            <Link to="/">
+            Lama Corp</Link>
           </span>
+              <Link to="/">
            <Button  color="inherit" className={classes.button}>
               <HomeIcon className={classes.leftIcon} />
-              <Link to="/">Home</Link>
+              Home
           </Button>
+              </Link>
+              <Link to="/projects">
            <Button  color="inherit" className={classes.button}>
               <CodeIcon className={classes.leftIcon} />
-              <Link to="/projects">              Projects
-</Link>
+                            Projects
 
           </Button>
+</Link>
+<Link to="/about">
            <Button  color="inherit" className={classes.button}>
               <AboutIcon className={classes.leftIcon} />
-<Link to="/about">About</Link>
+About
           </Button>
+</Link>
+              <Link to="/blog">
            <Button  color="inherit" className={classes.lastButton}>
               <BlogIcon className={classes.leftIcon} />
-              <Link to="/blog">Blog</Link>
+              Blog
           </Button>
+              </Link>
         </Toolbar>
       </AppBar>
     </div>
