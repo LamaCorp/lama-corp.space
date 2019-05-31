@@ -19,6 +19,7 @@ import AboutIcon from "@material-ui/icons/Help"
 import HomeIcon from "@material-ui/icons/Home"
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft"
 import MediaQuery from "react-responsive"
+import NavbarOnDesktop from "./NavbarOnDesktop"
 import "./../sass/styles.scss"
 export const primary = "#ffa500"
 const drawerWidth = 250
@@ -39,7 +40,7 @@ const styles = theme => ({
     marginLeft: "32px !important",
   },
   brand: {
-    fontWeight: 800,
+    fontWeight: 400,
     fontSize: "1.2em",
     boxShadow: "none",
     fontFamily: "Montserrat",
@@ -96,18 +97,7 @@ class Layout extends React.Component {
     return (
       <div className="all">
         <MediaQuery query="(min-width: 885px">
-          <AppBar position="fixed" className={classes.appBar}>
-            <Toolbar disableGutters={!left}>
-              <Link
-                to="/"
-                style={{ flexGrow: 1 }}
-                className={classes.brandOnDesktop}
-              >
-                Lama Corp
-              </Link>
-              <Button color="inherit">Login</Button>
-            </Toolbar>
-          </AppBar>
+         <NavbarOnDesktop />
         </MediaQuery>
         <MediaQuery query="(max-width: 885px)">
           <AppBar position="fixed" className={classes.appBar}>

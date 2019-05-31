@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Link from "gatsby-link"
 import Card from "./Card"
 export default class teamlist extends Component {
   render() {

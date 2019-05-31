@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "./../components/Layout"
 import SEO from "./../components/Seo"
-import { Link } from "gatsby"
 
 class NotFoundPage extends React.Component {
   render() {
