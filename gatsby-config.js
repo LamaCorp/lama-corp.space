@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://www.lama-corp.space`,
   },
   plugins: [
-    `gatsby-plugin-nprogress`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
@@ -59,8 +58,9 @@ module.exports = {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
             title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
             slug: node => node.fields.slug,
+            content: node => node.internal,
+            node: node => node,
           },
         },
       },

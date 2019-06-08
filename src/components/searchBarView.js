@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Index } from "elasticlunr"
 import Link from "./Link"
+import Card from "./Card"
 // Search component
 export default class Search extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class Search extends Component {
           value={this.state.query}
           onChange={this.search}
         />
-        <div className="search-results">
+        <div className="search-results" style={{ marginTop: "2 em" }}>
           {this.state.results.map(page => (
             <div className="search-result" key={page.fields.slug}>
               <span>
@@ -35,7 +36,6 @@ export default class Search extends Component {
               />
             </div>
           ))}
-          {this.state.results === [] ? <span>Prout</span> : ""}
         </div>
       </div>
     )

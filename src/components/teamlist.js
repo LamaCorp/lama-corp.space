@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import Card from "./Card"
+import Image from "gatsby-image"
+import { graphql } from "gatsby"
 export default class teamlist extends Component {
   render() {
     return (
@@ -7,6 +9,7 @@ export default class teamlist extends Component {
         <Card
           title="Diego Dorn"
           content="some content here :)"
+          // image={}
           primaryButton={["/team/diego", "More about Diego"]}
         />
         <Card

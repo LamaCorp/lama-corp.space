@@ -18,6 +18,7 @@ const Header = () => (
               fields {
                 slug
               }
+              html
               frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 title

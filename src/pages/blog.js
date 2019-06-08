@@ -19,14 +19,17 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.slug
             return (
-              <Link to={node.fields.slug}>
+              <Link
+                to={"blog" + node.fields.slug}
+                key={node.fields.slug + new Date().getMilliseconds()}
+              >
                 <div className="card" key={node.fields.slug}>
                   <small className="article-date">
                     {node.frontmatter.date}
                   </small>
-                  <dsiv className="card-header">
+                  <div className="card-header">
                     <h3 className="card-title">{title}</h3>
-                  </dsiv>
+                  </div>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.excerpt,
@@ -58,6 +61,7 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+          html
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
