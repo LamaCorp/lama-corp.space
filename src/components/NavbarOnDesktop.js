@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import CodeIcon from "@material-ui/icons/Code"
 import BlogIcon from "@material-ui/icons/LibraryBooks"
 import AboutIcon from "@material-ui/icons/Help"
@@ -39,7 +38,6 @@ const styles = {
     marginRight: "0px !important"
   },
   menuButton: {
-    marginLeft: -12,
     marginRight: 20,
   },
 };
@@ -49,7 +47,7 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar className={classes.appBar} position="fixed">
         <Toolbar style={{ backgroundColor: primary}}>
-          <span to="/" className={classes.menuButton} className={classes.grow}>
+          <span to="/" className={`${classes.grow} ${classes.menuButton}`}>
             <Link to="/">
             Lama Corp</Link>
           </span>
