@@ -5,7 +5,7 @@ import "../sass/styles.scss"
 export const primary = "#ffa400"
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
+    const { children, noContainer } = this.props
     return (
       <div className="all">
         <div className="navbarOnDesktop">
@@ -14,7 +14,7 @@ class Layout extends React.Component {
         <div className="navbarOnMobile">
           <NavbarOnMobile />
         </div>
-        <div className="container">{children}</div>
+        <div className={`${noContainer ? "" : "container"}`}>{children}</div>
         <footer>
           &copy; {new Date().getFullYear()} All rights reserved, Lama Corp |
           lama-corp.space

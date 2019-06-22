@@ -20,25 +20,24 @@
   padding: 25px;
   border-radius: 8px;
   border-top: 4px solid #000;
-  .card-header {
-    display: flex;
-    align-items: flex-start;
-  }
   .card-image {
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
   .card-title {
     margin: 0;
   }
   .card-image + .card-title {
-    margin-left: 0.5em;
+    margin-left: 0.3em;
   }
   .card-body {
-    p {
-      line-height: 1.5em;
-    }
+    line-height: 1.5em;
   }
   .card-actions {
     & .button {
@@ -48,4 +47,7 @@
       }
     }
   }
+}
+.card.restyled {
+  background: rgba(lighten($primary, 30), 0.2);
 }

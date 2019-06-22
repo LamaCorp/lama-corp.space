@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import ButtonPrimary from "./ButtonPrimary"
 import ButtonSecondary from "./ButtonSecondary"
 import Link from "./Link"
+import Image from "./Image"
 export default class Card extends Component {
   render() {
     const {
@@ -9,10 +10,11 @@ export default class Card extends Component {
       content,
       primaryButton,
       secondaryButton,
+      image,
+      alt,
       key,
       link,
-      html,
-      things,
+      restyled,
     } = this.props
     const buttons = []
     const showButton = () => {
@@ -50,14 +52,9 @@ export default class Card extends Component {
     }
     return (
       <Link to={getLink()}>
-        {things}
-        <div className="card" key={key}>
+        <div className={`card ${restyled ? "restyled" : ""}`} key={key}>
           <div className="card-header">
-            {/* <img
-              src="https://source.unsplash.com/random"
-              alt=""
-              className="card-image"
-            /> */}
+            <Image className="card-image" filename={image} alt={alt} />
             <h2 className="h1 card-title">{title}</h2>
           </div>
           <p className="card-content">{content}</p>

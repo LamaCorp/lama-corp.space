@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import Link from "./Link"
 import ButtonPrimary from "./ButtonPrimary"
 // import Link from "gatsby-link"
 export default class cta extends Component {
