@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button"
 import CodeIcon from "@material-ui/icons/Code"
 import AboutIcon from "@material-ui/icons/Help"
 import HomeIcon from "@material-ui/icons/Home"
+import MailIcon from "@material-ui/icons/Mail"
 import { primary } from "./Layout"
 import Link from "./Link"
 const styles = {
@@ -58,6 +59,12 @@ function ButtonAppBar(props) {
             <Button color="inherit" className={classes.button}>
               <CodeIcon className={classes.leftIcon} />
               Projects
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button color="inherit" className={classes.button}>
+              <MailIcon className={classes.leftIcon} />
+              Contact
             </Button>
           </Link>
           <Link to="/about">

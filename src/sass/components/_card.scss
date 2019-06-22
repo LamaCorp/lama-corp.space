@@ -1,7 +1,7 @@
 .card-container {
   display: grid;
   grid-column-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   .card {
     @extend .mb-2;
   }
@@ -50,4 +50,15 @@
 }
 .card.restyled {
   background: rgba(lighten($primary, 30), 0.2);
+}
+@include for-size(phone-only) {
+  .card {
+    .card-header {
+      display: block;
+      .card-title {
+        margin: 0;
+        margin-top: 0.3em;
+      }
+    }
+  }
 }

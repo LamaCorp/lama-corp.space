@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Layout from "./../components/Layout"
 import Seo from "./../components/Seo"
-
+import { graphql } from "gatsby"
 export default class contact extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +20,7 @@ export default class contact extends Component {
   }
 
   render() {
-    const mail = "felixdorn@protonmail.com"
+    const mail = this.props.site.siteMetadata.mail
     const mailtoLink = `mailto:${mail}?subject=${this.state.subject}&body=${
       this.state.body
     }`
@@ -52,3 +52,13 @@ export default class contact extends Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

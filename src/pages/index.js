@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <Cta
-          title="Who we are"
+          title="Who are we ?"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci laudantium quos error quaerat labore quam numquam, molestias placeat. Laborum."
           buttonText="About us"
           buttonLink="/about"

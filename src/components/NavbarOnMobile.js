@@ -94,12 +94,9 @@ class Layout extends React.Component {
               className={classes.menuButton}
               onClick={this.toggleDrawer("left", true)}
             >
-              <MenuIcon/>
+              <MenuIcon />
             </IconButton>
-            <Link
-              to="/"
-              className={`${classes.brand} ${classes.menuButton}`}
-            >
+            <Link to="/" className={`${classes.brand} ${classes.menuButton}`}>
               Lama Corp
             </Link>
           </Toolbar>
@@ -111,7 +108,7 @@ class Layout extends React.Component {
         >
           <div className={classes.drawerHeader}>
             <IconButton onClick={this.toggleDrawer("left", false)}>
-              <ChevronLeftIcon/>
+              <ChevronLeftIcon />
             </IconButton>
           </div>
           <div
@@ -124,33 +121,33 @@ class Layout extends React.Component {
               <Link to="/">
                 <ListItem button>
                   <ListItemIcon>
-                    <HomeIcon/>
+                    <HomeIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Home"/>
+                  <ListItemText primary="Home" />
                 </ListItem>
               </Link>
               <Link to="/projects">
                 <ListItem button>
                   <ListItemIcon>
-                    <CodeIcon/>
+                    <CodeIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Projects"/>
-                </ListItem>
-              </Link>
-              <Link to="/about">
-                <ListItem button>
-                  <ListItemIcon>
-                    <AboutIcon/>
-                  </ListItemIcon>
-                  <ListItemText primary="About"/>
+                  <ListItemText primary="Projects" />
                 </ListItem>
               </Link>
               <Link to="/contact">
                 <ListItem button>
                   <ListItemIcon>
-                    <MailIcon/>
+                    <MailIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Contact"/>
+                  <ListItemText primary="Contact" />
+                </ListItem>
+              </Link>
+              <Link to="/about">
+                <ListItem button>
+                  <ListItemIcon>
+                    <AboutIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="About" />
                 </ListItem>
               </Link>
             </List>

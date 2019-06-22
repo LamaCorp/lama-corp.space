@@ -4,6 +4,7 @@ module.exports = {
     author: `Lama Corp`,
     description: `Lama Corp Website.`,
     siteUrl: `https://www.lama-corp.space`,
+    mail: `contact@lama-corp.space`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,

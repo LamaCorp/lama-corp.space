@@ -5,7 +5,6 @@ export default class ProjectList extends Component {
     return (
       <div className="card-container">
         <Card
-          restyled
           title="Amazing Project"
           content="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas
               simplement du texte aléatoire. Il trouve ses racines dans une
@@ -18,7 +17,6 @@ export default class ProjectList extends Component {
           ]}
         />
         <Card
-          restyled
           title="Amazing Project"
           content="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas
               simplement du texte aléatoire. Il trouve ses racines dans une
@@ -31,7 +29,6 @@ export default class ProjectList extends Component {
           ]}
         />
         <Card
-          restyled
           title="Amazing Project"
           content="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas
               simplement du texte aléatoire. Il trouve ses racines dans une
@@ -44,7 +41,6 @@ export default class ProjectList extends Component {
           ]}
         />
         <Card
-          restyled
           title="Amazing Project"
           content="Contrairement à une opinion répandue, le Lorem Ipsum n'est pas
               simplement du texte aléatoire. Il trouve ses racines dans une
