@@ -1,12 +1,12 @@
 {
   "name": "lama-corp-website",
   "description": "Lama Corp Website",
-  "version": "0.1.0",
+  "version": "1.0.0-a",
   "author": "Félix Dorn <felixdorn@protonmail.com>",
-  "@material-ui/core": "^3.9.3",
-  "@material-ui/icons": "^3.0.2",
-  "gatsby": "^2.5.5",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "gatsby": "^2.5.5",
     "gatsby-image": "^2.1.0",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.1.1",

@@ -20,7 +20,7 @@ export default class contact extends Component {
   }
 
   render() {
-    const mail = this.props.site.siteMetadata.mail
+    const mail = this.props.data.site.siteMetadata.mail
     const mailtoLink = `mailto:${mail}?subject=${this.state.subject}&body=${
       this.state.body
     }`

@@ -8,13 +8,15 @@ class Layout extends React.Component {
     const { children, noContainer } = this.props
     return (
       <div className="all">
-        <div className="navbarOnDesktop">
-          <NavbarOnDesktop />
-        </div>
-        <div className="navbarOnMobile">
-          <NavbarOnMobile />
-        </div>
-        <div className={`${noContainer ? "" : "container"}`}>{children}</div>
+        <header>
+          <nav className="navbarOnDesktop">
+            <NavbarOnDesktop />
+          </nav>
+          <nav className="navbarOnMobile">
+            <NavbarOnMobile />
+          </nav>
+        </header>
+        <main className={`${noContainer ? "" : "container"}`}>{children}</main>
         <footer>
           &copy; {new Date().getFullYear()} All rights reserved, Lama Corp |
           lama-corp.space
